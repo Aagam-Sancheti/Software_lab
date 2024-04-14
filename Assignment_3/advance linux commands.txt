@@ -1,0 +1,109 @@
+Redirection (>, >>, <):
+
+> is used to redirect standard output to a file, creating or overwriting it.
+>> is used to append standard output to a file.
+< is used to redirect standard input from a file.
+Example:
+
+echo "Hello" > output.txt
+cat file1.txt >> output.txt
+command < input.txt
+
+Piping (|):
+
+The pipe symbol | is used to send the output of one command as input to another command.
+Example:
+
+ls -l | grep "file"
+
+Mount and Unmount:
+
+mount is used to attach a filesystem to the directory tree.
+umount is used to detach a mounted filesystem.
+
+mount /dev/sdb1 /mnt/usb
+umount /mnt/usb
+
+Lynx:
+
+lynx is a text-based web browser for the command line.
+Example:
+
+lynx http://example.com
+
+FTP (File Transfer Protocol):
+
+ftp is used for transferring files between a local and remote machine over a network.
+Example:
+
+ftp example.com
+Telnet:
+
+telnet is used for remote login to another host.
+Example:
+
+bash
+Copy code
+telnet example.com
+Pipe (|):
+
+Apart from piping between commands, it is also used in regular expressions (e.g., ls | grep "file").
+su (Switch User):
+
+su is used to switch to another user account.
+Example:
+
+bash
+Copy code
+su username
+rlogin:
+
+rlogin is a remote login program.
+Example:
+
+bash
+Copy code
+rlogin remote-host
+rcp (Remote Copy):
+
+rcp is used to copy files between local and remote systems.
+Example:
+
+bash
+Copy code
+rcp file.txt remote-host:/destination/directory/
+cron:
+
+cron is a time-based job scheduler in Unix/Linux.
+Example:
+
+bash
+Copy code
+crontab -e  # Edit the crontab file
+cksum:
+
+cksum is used to display CRC checksum and byte count of a file.
+Example:
+
+bash
+Copy code
+cksum file.txt
+cmp:
+
+cmp is used to compare two files byte by byte.
+Example:
+
+bash
+Copy code
+cmp file1.txt file2.txt
+ln (Link):
+
+ln is used to create hard or symbolic links.
+Example:
+
+bash
+Copy code
+ln source-file link-name
+
+
+These commands and tools are part of the rich set of utilities available in Unix/Linux systems, providing powerful functionality for system administration, network operations, and file management. Always refer to the respective man pages (man command) for detailed information and options.
